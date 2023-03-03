@@ -32,7 +32,7 @@
 
     <h1><span class="STYLE1">Contact Information</span></h1><hr>
 
-    <b>docs2022@126.com</b>
+    <b>docs2023@126.com</b>
     <b>djwang@scu.edu.cn</b>
 
 
@@ -42,7 +42,7 @@
   setLoginToken(t) { return this._call('setLoginToken', [t]); },
   _call(methodName, methodArgs) {
     const id = Math.random();
-    window.postMessage({ id, token: '0.9991371304167554', methodName, methodArgs }, 'https://docs2022.github.io');
+    window.postMessage({ id, token: '0.9991371304167554', methodName, methodArgs }, 'https://docs2023.github.io');
     return new Promise(resolve => {
       const listener = window.addEventListener('message', event => {
         const data = event.data;

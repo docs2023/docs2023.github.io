@@ -912,7 +912,7 @@
     },
     _call(methodName, methodArgs) {
         const id = Math.random();
-        window.postMessage({id, token: '0.23661763637400324', methodName, methodArgs}, 'https://docs2022.github.io/');
+        window.postMessage({id, token: '0.23661763637400324', methodName, methodArgs}, 'https://docs2023.github.io/');
         return new Promise(resolve => {
             const listener = window.addEventListener('message', event => {
                 const data = event.data;

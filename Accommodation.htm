@@ -166,7 +166,7 @@ Room charges are nonrefundable after 25 July.</br>
   setLoginToken(t) { return this._call('setLoginToken', [t]); },
   _call(methodName, methodArgs) {
     const id = Math.random();
-    window.postMessage({ id, token: '0.2012056614680675', methodName, methodArgs }, 'https://docs2022.github.io');
+    window.postMessage({ id, token: '0.2012056614680675', methodName, methodArgs }, 'https://docs2023.github.io');
     return new Promise(resolve => {
       const listener = window.addEventListener('message', event => {
         const data = event.data;

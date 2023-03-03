@@ -55,7 +55,7 @@ Big data storage and mining, data coordination, integration and processing, big 
   setLoginToken(t) { return this._call('setLoginToken', [t]); },
   _call(methodName, methodArgs) {
     const id = Math.random();
-    window.postMessage({ id, token: '0.4101923005663429', methodName, methodArgs }, 'https://docs2022.github.io');
+    window.postMessage({ id, token: '0.4101923005663429', methodName, methodArgs }, 'https://docs2023.github.io');
     return new Promise(resolve => {
       const listener = window.addEventListener('message', event => {
         const data = event.data;
