@@ -32,6 +32,13 @@
             text-align: justify;
         }
 
+        body,
+        html {
+            height: 5850px;
+            width: 100%;
+            overflow-y: scroll;
+        }
+
         .container {
             display: flex;
             justify-content: center;
@@ -45,6 +52,7 @@
             height: 500px;
             display: flex;
             justify-content: center;
+            margin-bottom: 15px;
         }
 
         .tb-date {
@@ -62,62 +70,313 @@
             border: 1px solid black;
             font-size: 18px;
         }
-        .reporter{
+
+        .reporters {
             margin-top: 10px;
             height: 50px;
+        }
+
+        .reporter {
+            margin: 10px 10px 0px;
+        }
+
+        .name {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .content {
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+        p {
+            text-indent: 2em;
+        }
+
+        img {
+            display: block;
+            float: left;
+            margin-right: 10px;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-    <div class="main">
-        <table border="1">
-            <tr>
-                <th class="tb-date">September 22, 2022 (Friday)</th>
-            </tr>
-            <tr>
-                <td>Plenary Speech I: 桂卫华院士（中南大学）</td>
-            </tr>
-            <tr>
-                <td>Plenary Speech II: Prof. Fei Wu（浙江大学）</td>
-            </tr>
-            <tr>
-                <td>Plenary Speech III: Prof. Carlos A. Coello Coello</td>
-            </tr>
-            <tr>
-                <th class="tb-date">September 23, 2022 (Saturday)</th>
-            </tr>
-            <tr>
-                <td>Plenary Speech IV: Prof. Thomas Bäck（Leiden University）</td>
-            </tr>
-            <tr>
-                <th class="tb-date">September 24, 2022 (Sunday)  特邀报告</th>
-            </tr>
-            <tr>
-                <td>张兴义（安徽大学）</td>
-            </tr>
-            <tr>
-                <td>童咏昕（北航）</td>
-            </tr>
-            <tr>
-                <td>韩亚洪（天津大学）</td>
-            </tr>
-            <tr>
-                <td>孟德宇（西交大）</td>
-            </tr>
-            <tr>
-                <td>丁进良（东北大学）</td>
-            </tr>
-            <tr>
-                <td>钱宇华（山西大学）</td>
-            </tr>
-        </table>
+        <div class="main">
+            <table border="1">
+                <tr>
+                    <th class="tb-date">September 22, 2022 (Friday)</th>
+                </tr>
+                <tr>
+                    <td>Plenary Speech I: 桂卫华院士（中南大学）</td>
+                </tr>
+                <tr>
+                    <td>Plenary Speech II: Prof. Fei Wu（浙江大学）</td>
+                </tr>
+                <tr>
+                    <td>Plenary Speech III: Prof. Carlos A. Coello Coello</td>
+                </tr>
+                <tr>
+                    <th class="tb-date">September 23, 2022 (Saturday)</th>
+                </tr>
+                <tr>
+                    <td>Plenary Speech IV: Prof. Thomas Bäck（Leiden University）</td>
+                </tr>
+                <tr>
+                    <th class="tb-date">September 24, 2022 (Sunday) 特邀报告</th>
+                </tr>
+                <tr>
+                    <td>张兴义（安徽大学）</td>
+                </tr>
+                <tr>
+                    <td>童咏昕（北航）</td>
+                </tr>
+                <tr>
+                    <td>韩亚洪（天津大学）</td>
+                </tr>
+                <tr>
+                    <td>孟德宇（西交大）</td>
+                </tr>
+                <tr>
+                    <td>丁进良（东北大学）</td>
+                </tr>
+                <tr>
+                    <td>钱宇华（山西大学）</td>
+                </tr>
+            </table>
+        </div>
+        <div class="reporters">
+            <h2>大会报告人</h2>
+            <div class="reporter">
+                <p class="name">桂卫华</p><img src="Plenary/guiweihua.png" />
+                <p class="content">中国工程院院士、教授、博士生导师、全国优秀教师，全国优秀科技工作者。
+                <p class="content">
+                    1975年毕业于中南矿冶学院工业企业电气化及自动化专业，1981年获得中南矿冶学院工业自动化专业硕士学位，1986年赴德国Duisburg大学自动控制专业做访问学者两年，曾任中南大学信
+                    息科学与工程学院院长，现任中南大学学术委员会主任、控制工程研究所所长、有色冶金自动化教育部工程研究中心主任、中国自动化学会副理事长、中国自动化学会过程控制专业委员会主任委员、湖南省自动化学会名誉理事长。
+                </p>
+                <p class="content">
+                    长期致力于流程工业生产过程控制理论、技术和工程应用的研究，围绕流程工业企业信息化和智能制造的技术问题，创建了以智能集成为核心的复杂有色冶金过程建模、控制与优化的理论与方法。成果主要应用在有色金属行业的多家大型企业，获得显著的经济效益和社会效益，为我国流程工业的快速发展、特别是自动化技术的提升和自主创新作出了重要贡献。
+                </p>
+                <p class="content">
+                    其研究成果获国家科技进步二等奖3项、国家技术发明二等奖1项，省部级科技奖励18项，发表学术论文400余篇，EI、SCI收录238篇；获“何梁何利基金科学与技术进步奖”、“湖南光召科技奖”、
+                    “中国过程控制终身成就奖”、“中国过程控制技术贡献奖”、“杨嘉墀科技奖”等荣誉称号；出版专著5部等。执教三十余年，获得“全国教书育人楷模”、“全国模范教师”、
+                    “全国优秀教师”、“全国优秀科技工作者”、
+                    “全国有色金属行业劳动模范”、“中国有色金属工业优秀科技工作者”等荣誉称号。
+                <p class="content">
+                    作为学术带头人，带领科研团队于2013年成为国家自然科学基金创新研究群体，2016年创新群体以整体优秀结题并获得国家自然科学基金委滚动支持。</p>
+
+            </div>
+            <div class="reporter">
+                <p class="name">吴飞</p><img src="Plenary/wufei.png" />
+                <p class="content">浙江大学求是特聘教授，博士生导师。
+                <p class="content">
+                    主要研究领域为人工智能、多媒体分析与检索和统计学习理论。浙江大学人工智能研究所所长、美国加州大学伯克利分校统计系访问学（2009.10-2010.8）。</p>
+                <p class="content">
+                    国家杰出青年科学基金获得者（2016年）、入选“高校计算机专业优秀教师奖励计划”(2018年)、宝钢优秀教师奖（2019年度），教育部人工智能科技创新专家组工作组组长（2018.8-2020.12）、科技部科技创新2030“新一代人工智能”重大科技项目指南编制专家。
+                </p>
+                <p class="content">
+                    科技部重点研发计划项目负责人、主持国家自然科学基金重点项目2项，担任中国工程院院刊《Engineering》信息与电子工程学科执行主编、中国工程院信息学部分刊信息电子前沿《Frontiers of
+                    Information Technology & Electronic Engineering》编委、《IEEE Transactions on
+                    Cybernetics》编委、中国计算机学会多媒体技术专业委员会常务委员。</p>
+                <p class="content">
+                    著有《人工智能导论：模型与算法》（高等教育出版社出版）、浙教版普通高中教科书信息技术选择性必修教材《人工智能初步》（浙江教育出版社出版）和《走进人工智能》（高等教育出版社出版）等。在中国大学MOOC（爱课程）开设国家级一流本科课程（线上课程）《人工智能：模型与算法》慕课（https://www.icourse163.org/course/ZJU-1003377027）。
+                </p>
+                <p class="content">
+                    曾获世界人工智能大会最高奖“卓越人工智能引领者奖”（2021年度，排名第一）和中国电子学会2021年度科技进步一等奖（排名第一）。</p>
+            </div>
+            <div class="reporter">
+                <p class="name">Prof. carlos</p><img src="Plenary/carlos.png" />
+                <p class="content"> <B>Affiliation</B></p>
+                <p class="content"> Department of Computer Science</p>
+                <p class="content">
+                    CINVESTAV-IPN (Evolutionary Computation Group)</p>
+                <p class="content">
+                    Mexico City, Mexico</p>
+                <p class="content">
+                    Basque Center for Applied Mathematics and Ikerbasque, Bilbao, Spain</p>
+                <p class="content"> <B>Biography</B></p>
+                <p class="content"> Carlos Artemio Coello Coello (Fellow, IEEE) received the Ph.D. degree in computer
+                    science from Tulane
+                    University, New Orleans, LA, USA, in 1996.He is currently a Professor with Distinction (CINVESTAV-3F
+                    Researcher) with the Department of Computer Science, CINVESTAV-IPN, Mexico City, Mexico. He has
+                    authored
+                    and coauthored over 550 technical papers and book chapters. His publications currently report over
+                    61
+                    800 citations in Google Scholar (his H-index is 96).</p>
+                <p class="content">
+                    Prof. Coello Coello has received several awards, including the 2007 National Research Award from the
+                    Mexican Academy of Science (in the area of exact sciences), the 2009 Medal to the Scientific Merit
+                    from
+                    Mexico City's Congress, the Ciudad Capital: Heberto Castillo 2011 Award for scientists under the age
+                    of
+                    45, in Basic Science, the 2012 Scopus Award (Mexico's edition) for being the Most Highly Cited
+                    Scientist
+                    in Engineering in the five years previous to the award and the 2012 National Medal of Science in
+                    Physics, Mathematics, and Natural Sciences from Mexico's Presidency (this is the most important
+                    award
+                    that a scientist can receive in Mexico). He received the Luis Elizondo Award from the Tecnológico de
+                    Monterrey in 2019.</p>
+                <p class="content">
+                    Additionally, he is the recipient of the prestigious 2013 IEEE Kiyo Tomiyasu Award, “for pioneering
+                    contributions to single- and multi-objective optimization techniques using bioinspired
+                    metaheuristics,”
+                    of the 2016 The World Academy of Sciences Award in Engineering Sciences, and of the prestigious 2021
+                    IEEE Computational Intelligence Society Evolutionary Computation Pioneer Award. He is currently the
+                    Editor-in-Chief of the IEEE Transactions on Evolutionary Computation.</p>
+            </div>
+            <div class="reporter">
+                <p class="name">Prof. Thomas</p><img src="Plenary/Thomas.png" />
+                <p class="content">Professor of Natural Computing</p>
+                <p class="content">
+                    Thomas Bäck (Fellow, IEEE) received the Diploma degree in Computer Science in 1990 and the Ph.D.
+                    degree
+                    in Computer Science in 1994, both from the University of Dortmund, Germany. He is Professor of
+                    Computer
+                    Science with the Leiden Institute of Advanced Computer Science (LIACS), Leiden University,
+                    Netherlands.
+                    His research interests include evolutionary computation, machine learning, and their real-world
+                    applications, especially in sustainable smart industry and health.</p>
+                <p class="content">
+                    In 2021, Dr. Bäck has been elected as member of the Royal Netherlands Academy of Arts and Sciences
+                    (KNAW) and as IEEE Fellow (class of 2022). He was a recipient of the IEEE Computational Intelligence
+                    Society (CIS) Evolutionary Computation Pioneer Award in 2015, was elected as Fellow of the
+                    International
+                    Society of Genetic and Evolutionary Computation in 2003, and received the best Ph.D. thesis award
+                    from
+                    the German society of Computer Science (GI) in 1995.</p>
+                <p class="content">
+                    He currently serves as an Associate Editor for the IEEE Transactions on Evolutionary Computation and
+                    Artificial Intelligence Review journals and area editor for the ACM Transactions on Evolutionary
+                    Learning and Optimization. He is editorial board member of the Natural Computing Journal (Springer),
+                    Artificial Intelligence Journal, and Journal of Intelligent Manufacturing (Springer). He is also
+                    co-editor-in-chief of the Handbook of Evolutionary Computation (CRC Press/Taylor & Francis 1997),
+                    co-editor of the Handbook of Natural Computing (Springer, 2013), co-editor of the Natural Computing
+                    Book
+                    Series (Springer), author of Evolutionary Computation in Theory and Practice (OUP, New York, 1996)
+                    and
+                    co-author of Contemporary Evolution Strategies (Springer, 2013).</p>
+                <p class="content">
+                    Thomas has a strong interest in real-world applications of his research. In his research projects,
+                    he
+                    collaborates with many companies, including e.g. ASML, BMW Group, C-Job Naval Engineers, Heerema,
+                    Honda
+                    Research Institute Europe GmbH, KLM, Mercedes-Benz, TataSteel Europe.</p>
+            </div>
+            <h2>特邀报告人</h2>
+            <div class="reporter">
+                <p class="name">张兴义（安徽大学）</p><img src="Plenary/zhangxingyi.jpg" width="115" height="150" />
+                <p class="content"> 教授，博士生导师，国家优青，安徽省杰青，计算智能与信号处理教育部重点实验室主任。IEEE高级会员、国际顶级期刊IEEE
+                    TEVC副编、国际SCI期刊CAIS、IJBIC编委，国际会议ACMC
+                    2015、首届数据驱动的复杂系统优化及应用会议主席。</p>
+                <p class="content">
+                    研究方向为非传统模型与算法、多目标进化优化及应用等。近5年在IEEE TEVC、IEEE TNNLS、IEEE TCYB、IEEE
+                    TSMC等计算智能领域顶级或权威期刊发表论文30余篇。3篇论文入选ESI高被引，4篇论文先后获得杰出论文奖，其中包括计算智能领域顶级期刊IEEE
+                    TEVC的2018年和2021年唯一杰出论文奖以及权威期刊IEEE CIM的2020年唯一杰出论文奖。</p>
+                <p class="content">
+                    主持过科技部2030-“新一代人工智能”重大项目（课题负责人）1项，国家自然科学基金面上项目2项，青年项目1项，安徽省科技重大专项1项以及其它省部级项目多项。</p>
+            </div>
+            <div class="reporter">
+                <p class="name">童咏昕（北航）</p><img src="Plenary/dongyongxin.png" />
+                <p class="content">
+                    教授，博士生导师，国家自然科学基金优秀青年基金获得者。2014年于香港科技大学获计算机科学与工程学博士学位，随后留校担任研究助理教授，2015年入选北京航空航天大学“卓越百人计划”并加入计算机学院软件开发环境国家重点实验室。
+                </p>
+                <p class="content">
+                    长期从事大数据与人工智能领域的研究工作，目前主要研究方向包括：联邦学习、时空大数据分析、强化学习、隐私保护、众包计算与群体智能等。并与阿里巴巴达摩院、微软研究院、百度研究院、滴滴研究院、腾讯微众银行、贝壳与第四范式等国内外知名IT企业保持长期合作，及众多国际著名高校的教授研究组保持长期合作研究。
+                </p>
+                <p class="content">
+                    目前共发表学术论文80余篇，其中以第一/通讯作者在VLDBJ、TOIS、TKDE、SIGMOD、SIGKDD、VLDB、ICDE和AAAI等CCF
+                    A类期刊/会议上持续发表（含接受）论文50余篇，Google
+                    Scholar统计引用3000余次。并先后主持国家重点研发计划课题等10余项科研项目。</p>
+                <p class="content">
+                    曾获阿里巴巴集团评选的首届“达摩院青橙奖”、国际大数据领域顶级会议VLDB 2014的“杰出演示系统奖”和数据挖掘顶级国际竞赛 KDD Cup
+                    2020的“强化学习赛道冠军和赛队教练”。担任大数据领域国际期刊《IEEE Transactions on Big Data》的编委、《Frontiers of Computer
+                    Science》青年编委和《软件学报》专刊特约编辑等，并连续任多个CCF
+                    A类会议的（高级）程序委员会委员。也是中国计算机学会(CCF)高级会员、CCF杰出演讲者、CCF会员与分部工作委员会主任助理、“CCF-滴滴大数据联合实验室”学术委员会委员和中国人工智能学会(CCAI)智能服务专业委员会常务委员。
+                </p>
+                <p class="content">
+                    目前的教学工作主要承担本科生课程《算法设计与分析》、研究生课程《数据挖掘》、《大数据处理前沿技术》、《程序设计与算法》和慕课课程《算法设计与分析》（https://www.icourse163.org/course/BUAA-1449777166）。
+                </p>
+                <p class="content">
+                    研究组主页：<a href="http://yongxintong.group/" target="_blank">http://yongxintong.group/</a>。</p>
+            </div>
+            <div class="reporter">
+                <p class="name">韩亚洪（天津大学）</p><img src="Plenary/hanyahong.png" />
+                <p class="content">天津大学人工智能学院教授，博士生导师/硕士生导师。</p>
+                <p class="content">
+                    主讲课程：媒体计算（本科）、数字媒体技术（本科）、高级计算机视觉（研究生）、深度学习（全校研究生公共选修课）。</p>
+                <p class="content">
+                    于2012年获得浙江大学计算机科学博士学位，导师是庄越挺教授。2012年，被授予CCF优秀论文。2012年3月，加入天津大学计算机科学与技术学院，任副教授。2013年入选教育部新世纪优秀人才计划（NCET）。2014年11月至2015年11月，作为访问学者访问了加州大学伯克利分校余斌教授课题组。被授予ACM多媒体2017的最佳论文决赛入围者和大挑战荣誉奖。2021年，作为博士生导师获得CSIG（中国图象图形学会）优秀论文。于2021年被任命为天津大学杰出教授。
+                </p>
+                <p class="content">
+                    研究方向：多媒体分析、机器学习、计算机视觉。</p>
+                <p class="content">
+                    个人主页：<a href="http://cic.tju.edu.cn/faculty/hanyahong/index.html/"
+                        target="_blank">http://cic.tju.edu.cn/faculty/hanyahong/index.html/</a>。</p>
+            </div>
+            <div class="reporter">
+                <p class="name">孟德宇（西交大）</p><img src="Plenary/mengdeyu.png" />
+                <p class="content">西安交通大学教授，博导。</p>
+                <p class="content">
+                    在西安交通大学获得应用数学学士和硕士学位，以及计算机科学博士学位，博士生导师是徐宗本教授。2012年8月，加入了计算机科学学院机器人研究所，与Fernando De la
+                    Torre博士一起工作。2012年8月，加入了卡内基梅隆大学计算机科学学院语言技术研究所，与Alex
+                    Hauptmann博士一起工作。加入大数据算法与分析技术国家工程实验室、西安数学与数学技术研究院。</p>
+                <p class="content">
+                    研究兴趣包括机器学习及其在多媒体内容分析和计算机视觉中的应用。</p>
+                <p class="content">
+                    XJTU Homepage(西安交通大学主页)： <a href="http://gr.xjtu.edu.cn/web/dymeng"
+                        target="_blank">http://gr.xjtu.edu.cn/web/dymeng</a></p>
+                <p class="content">
+                    CMU Homepage(卡内基梅隆大学主页)： <a href="http://www.cs.cmu.edu/~deyum"
+                        target="_blank">http://www.cs.cmu.edu/~deyum</a></p>
+            </div>
+            <div class="reporter">
+                <p class="name">丁进良（东北大学）</p><img src="Plenary/dingjinliang.jpg" width="115" height="150" />
+                <p class="content">东北大学教授、博导。国家杰出青年科学基金获得者。现任流程工业综合自动化国家重点实验室副主任。</p>
+                <p class="content">
+                    长期从事复杂工业过程智能建模与智能优化与控制、生产全流程运行优化、工业大数据分析、机器学习、计算智能及其应用研究。先后主持与完成国家自然科学基金重大项目课题、杰出青年基金、工信部智能制造专项等科研项目20余项。研究成果发表论文100余篇。1篇论文获IFAC会刊Control
+                    Engineering Practice
+                    2011-2013年度最佳论文奖。获得发明专利20余项（美国专利1项）、计算机软件著作权11项；获第十四届中国青年科技奖、国家技术发明二等奖（排名第2）、省部级一等奖3项。享受国务院特殊津贴、国家百千万人才工程和辽宁省兴辽英才计划科技创新团队。
+                </p>
+                <p class="content">
+                    目前担任IFAC MMM和LSC两个技术委员会委员，
+                    IEEE高级会员，中国自动化学会常务理事，过程控制专委会和边缘计算专委会副主任，大数据专委会秘书长，控制理论等多个专委会委员和《控制工程》副主编。</p>
+            </div>
+            <div class="reporter">
+                <p class="name">钱宇华（山西大学）</p><img src="Plenary/qianyuhua.png" />
+                <p class="content">博士，教授、博士生导师，山西大学科学技术处处长，山西大学大数据科学与产业研究院负责人，计算智能与中文信息处理教育部重点实验室副主任。</p>
+                <p class="content">
+                    从事人工智能、大数据、数据挖掘与机器学习等方面的研究。国家高层次人才，全球高被引科学家，国家优秀青年基金获得者，三晋学者，山西省中青年拔尖创新人才，教育部新世纪人才，山西省学术技术带头人，省委联系的高级专家，山西省青年学术带头人。中国人工智能学会理事，中国人工智能学会粒计算与知识发现专业委员会副主任。
+                </p>
+                <p class="content">
+                    近年来，主持和参与国家重点研发计划、国家自然科学基金优秀青年基金、国家自然科学基金重点项目、教育部新世纪人才计划项目、教育部社科类重点项目等国家级项目20余项。围绕粒计算、机器学习、进化智能、关联学习、复杂网络分析等领域中的共性基础问题开展系统研究，先后在《Artificial
+                    Intelligence》、《IEEE Transactions on Pattern Analysis and Machine Intelligence 》、《Journal of Machine
+                    Learning Research》、《Machine Learning》ACM Transactions on Information Systems》、《ACM Transactions on
+                    Knowledge Discovery from Data》、《International Journal of Approximate Reasoning》、《IEEE Transactions
+                    on
+                    Neural Networks and Learning Systems》、《IEEE Transactions on Knowledge and Data Engineering》、《IEEE
+                    Transactions on Fuzzy Systems》、《IEEE Transactions on Systems, Man and Cybernetics》、《Pattern
+                    Recognition》、《中国科学》等国际重要期刊发表SCI论文100余篇，获发明专利4项。系列成果被国内外相关学者广泛应用于遥感图像分析、医疗诊断数据分析、生物数据挖掘、社会网络分析、国防科技服务等领域。
+                </p>
+                <p class="content">
+                    曾获得山西省科学技术奖（自然科学类）一等奖，教育部宝钢教育基金特等奖，CCF 优秀博士论文奖，山西省“五四青年奖章”，全国百篇优秀博士论文提名奖。</p>
+            </div>
+            <div class="reporter">
+                <p class="name">陈伟能（华南理工大学）</p><img src="Plenary/chenweineng.png" />
+                <p class="content">华南理工大学计算机科学与工程学院教授，博士生导师、副院长。主要研究方向是群体智能、演化计算及其应用。</p>
+                <p class="content">
+                    2016年获国家优秀青年科学基金资助，2015年获广东省杰出青年科学基金资助；2018年获霍英东青年教师奖。目前已发表国际期刊和国际会议论文100余篇，其中IEEE
+                    Transactions长文40余篇；主持国家重点研发科技创新2030“新一代人工智能”重大项目、国家自然科学基金面上项目、国家自然科学基金-英国皇家学会牛顿基金项目等国家和省部级项目10余项。博士学位论文先后获IEEE
+                    CIS（计算智能学会）杰出博士学位论文奖和中国计算机学会（CCF）优秀博士学位论文奖。</p>
+                <p class="content">
+                    现任大数据与计算智能粤港联合创新平台负责人、IEEE广州分会副主席，中国计算机学会人工智能与模式识别专业委员会委员，中国计算机学会协同计算专业委员会委员，国际期刊IEEE Trans. on
+                    Neural
+                    Network & Learning Systems及Complex and Intelligent Systems副编辑。</p>
+            </div>
+            <br>
+        </div>
     </div>
-    <div class="reporter">
-       <p style="font-size: large;">报告个人简历下载：<a href="Plenary/Reporter.docx">报告个人简历</a></p> 
-    </div>
-</div>
 </body>
 
 </html>
