@@ -32,14 +32,16 @@
             text-align: justify;
         }
 
-        body {
+        .container {
             display: flex;
             justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
         .main {
-            margin-top: 50px;
-            width: 800px;
+            margin-top: 10px;
+            width: 1000px;
             height: 500px;
             display: flex;
             justify-content: center;
@@ -60,10 +62,15 @@
             border: 1px solid black;
             font-size: 18px;
         }
+        .reporter{
+            margin-top: 10px;
+            height: 50px;
+        }
     </style>
 </head>
 
 <body>
+    <div class="container">
     <div class="main">
         <table border="1">
             <tr>
@@ -103,10 +110,14 @@
                 <td>丁进良（东北大学）</td>
             </tr>
             <tr>
-                <td>钱宇华（山西大学，待定）</td>
+                <td>钱宇华（山西大学）</td>
             </tr>
         </table>
     </div>
+    <div class="reporter">
+       <p style="font-size: large;">报告个人简历下载：<a href="Plenary/Reporter.docx">报告个人简历</a></p> 
+    </div>
+</div>
 </body>
 
 </html>
